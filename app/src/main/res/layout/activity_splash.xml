@@ -7,10 +7,16 @@
     <!-- ImageView for displaying the logo -->
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="200dp"   <!-- Set desired width size -->
-    android:layout_height="200dp"  <!-- Set desired height size -->
-    android:src="@drawable/ase_cbe_logo"   <!-- Reference to the logo image file in drawable -->
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="1dp" />  <!-- Set desired width size -->
+    android:layout_height="200dp" <!-- Set desired height size -->
+    android:src="@drawable/ase_cbe_logo"  <!-- Reference to the logo image file in drawable -->
     android:layout_centerInParent="true" /> <!-- Center the logo in the parent layout -->
 
 </RelativeLayout>
+
 

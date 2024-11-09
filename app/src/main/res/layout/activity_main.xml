@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ccffcc" <!-- Light Green Background -->
+    android:background="#ccffcc" <!-- Light green background -->
     android:paddingTop="50dp" <!-- Optional: Padding to avoid overlap with the status bar -->
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
@@ -15,22 +15,24 @@ android:layout_width="match_parent"
 android:layout_height="300dp"
 android:layout_centerInParent="true"
 android:layout_marginTop="80dp"
-android:radius="12dp"
-android:cardElevation="4dp">
+app:cardCornerRadius="12dp"  <!-- Correct attribute for corner radius -->
+    app:cardElevation="4dp">  <!-- Correct attribute for card elevation -->
 
-<!-- Inside the CardView: A TextView for displaying flashcard content (questions/answers) -->
+    <!-- Inside the CardView: A TextView for displaying flashcard content (questions/answers) -->
 <TextView
-    android:id="@+id/flashCardText"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:text="Flashcard Content"
-    android:textSize="24sp"
-    android:textColor="#333333" <!-- Text color -->
-android:padding="16dp" />
-</androidx.cardview.widget.CardView>
+android:id="@+id/flashCardText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+android:text="Flashcard Content"
+android:textSize="24sp"
+android:textColor="#333333" <!-- Text color -->
+    android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
 
     <!-- Buttons for navigating the flashcards -->
+
+    <!-- Previous Button -->
 <Button
 android:id="@+id/btnPrevious"
 android:layout_width="wrap_content"
@@ -40,6 +42,7 @@ android:layout_below="@id/flashCard"
 android:layout_marginTop="32dp"
 android:layout_alignParentStart="true"/>
 
+    <!-- Next Button -->
 <Button
 android:id="@+id/btnNext"
 android:layout_width="wrap_content"
@@ -49,7 +52,7 @@ android:layout_below="@id/flashCard"
 android:layout_marginTop="32dp"
 android:layout_alignParentEnd="true"/>
 
-    <!-- Button to flip the flashcard -->
+    <!-- Flip Button -->
 <Button
 android:id="@+id/btnFlip"
 android:layout_width="wrap_content"
