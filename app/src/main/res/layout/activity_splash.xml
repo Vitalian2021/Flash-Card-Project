@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccffcc"> <!-- Light green background -->
+
+    <!-- ImageView for displaying the logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"  <!-- Set desired size -->
+    android:layout_height="200dp" <!-- Set desired size -->
+    android:src="@drawable/logo" <!-- Your logo file (place it in res/drawable) -->
+    android:layout_centerInParent="true" /> <!-- Center the logo in the parent layout -->
+
+</RelativeLayout>
