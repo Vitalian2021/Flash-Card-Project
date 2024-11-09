@@ -7,9 +7,10 @@
     <!-- ImageView for displaying the logo -->
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="200dp"  <!-- Set desired size -->
-    android:layout_height="200dp" <!-- Set desired size -->
-    android:src="@drawable/logo" <!-- Your logo file (place it in res/drawable) -->
+        android:layout_width="200dp"   <!-- Set desired width size -->
+    android:layout_height="200dp"  <!-- Set desired height size -->
+    android:src="@drawable/ase_cbe_logo"   <!-- Reference to the logo image file in drawable -->
     android:layout_centerInParent="true" /> <!-- Center the logo in the parent layout -->
 
 </RelativeLayout>
+
